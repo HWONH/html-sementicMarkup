@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>휘닉스 호텔 앤 리조트</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- 조건부 주석 cc(conditional comment)
+        ie9미만에서 html5에 추가된 semantic 태그를 인식할수 있도록 미리 만들어진 스크립트 파일
+        lt : less than 미만 , lte : 이하
+        gt: greater than 초과, gte: 이상
+
+        만약에 ie9미만의 브라우저에서 접속한다면 내부의 스크립트를 동작시키고,
+        조건을 만족하지 않으면 주석으로 건너뛰어라
+     -->
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <!-- 2. 운용의 용이성(Operable), 2.4 쉬운 내비게이션, 2.4.1 반복 영역 건너뛰기
+    콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.
+    skip 네비게이션 : 경로명에 건너뛰고 싶은 대상요소의 아이디명을 #과 함께 적어준다
+    주의점 : body의 첫 번째 자식으로 선언한다
+    예외) 자동실행되는 동영상이 있는 경우에는 동영상을 제어하는 버튼이 먼저 나온다 -->
+    <div id="skip">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <header id="header">
+        <h1 class="logo">
+            <a href="index.html"><img src="images/common/site-logo-hnr.png" alt="휘닉스 호텔 앤 리조트"></a>
+        </h1>
+        <nav id="gnb">
+            <ul>
+                <li><a href="#">통합예약</a></li>
+                <li><a href="#">패키지</a></li>
+                <li><a href="#">프로모션</a></li>
+                <li><a href="story/brand.html">휘닉스 스토리</a></li>
+                <li><a href="#">회원권안내</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h2 class="blind">본&nbsp;&nbsp;문</h2> <!-- &nbsp; 공백문자 -->
+        <article class="main_visual center">
+            <h3 class="title">[제주] 가볍게 떠나는 라이트(light)<br>&quot;봄&quot; 패키지</h3>
+            <p>&quot;Daylight&quot; &quot;Daylight&quot; 패키지</p>
+            <!-- 특수문자 : sc 라고 입력
+            태그 작성시에만 사용하는 특수문자 - "", '', <, >, 공백문자, &, ⓒ -->
+        </article>
+
+        <article class="event area">
+            <h3>EVENT &amp; PROMOTION</h3>
+            <!-- ul.evt_list>li*4>a>(div.photo>img)+(div.txt>strong+p) -->
+            <ul class="evt_list clearfix">
+                <li>
+                    <a href="#">
+                        <div class="photo"><img src="images/main/event1.jpg" alt=""></div>
+                        <div class="txt">
+                            <strong>5월 휘플위크 프로모션</strong>
+                            <p>휘닉스 평창 호텔 패키지 1+1 혜택!<br>휘닉스 제주 패키지 최대 20% 할인!</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="photo"><img src="images/main/event2.jpg" alt=""></div>
+                        <div class="txt">
+                            <strong>[평창] 캠핑 BBQ</strong>
+                            <p>자연 속에서 즐기는 봄의 낭만<br>
+                                프라이빗한 공간에 펼쳐진 캠핑 BBQ</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="photo"><img src="images/main/event3.jpg" alt=""></div>
+                        <div class="txt">
+                            <strong>[제주] 수영장 투숙객 무료 제공</strong>
+                            <p>제주의 푸른 하늘 아래 따뜻한 온수풀에서 즐기는 힐링 타임</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="photo"><img src="images/main/event4.jpg" alt=""></div>
+                        <div class="txt">
+                            <strong>[제주] 아쿠아플라넷 할인</strong>
+                            <p>휘닉스 제주 섭지코지 투숙 고객이라면<br>
+                                누구나 아쿠아플라넷 할인</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <footer id="footer">
+        <div class="area">
+            <address>서울특별시 중구 세종대로7길 56 3층<br>
+                kyon.jeongpil@phoenixhnr.co.kr 객실예약문의 : 1577-0069(#1) 분양/회원문의 : 1577-0069(#2)</address>
+            <p>COPYRIGHT PHOENIX HOTELS&amp;RESORTS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</body>
+</html>

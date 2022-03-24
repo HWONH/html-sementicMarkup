@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* main.css : 인덱스만의 스타일 */
+.main_visual{height: 750px; background: url("../images/main/image_p.jpg") no-repeat 50% 0%; padding-top: 330px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #fff;}
+/* box-sizing: border-box; width와 height에 padding과 border를 포함된 사이즈
+ie8+ */
+.main_visual .title{font-size: 60px; margin-bottom: 20px; font-weight: 400;}
+.main_visual p{display: inline-block; padding: 30px; background: rgba(9, 190, 70, 0.7); -webkit-border-radius: 60px 0px; -moz-border-radius: 60px 0px; border-radius: 60px 0px; font-size: 20px;}
+
+.event{padding: 100px 0 150px 0;}
+.event h3{height: 150px; text-align: center; font-size: 36px; color: #222; font-weight: 400px;}
+/* .evt_list li{float: left; width: 276px; margin-left: 32px;}
+.evt_list li:first-child{margin-left: 0px;} */
+.evt_list li{float: left; width: 276px;}
+.evt_list li + li{margin-left: 32px;}
+.evt_list a .photo{height: 298px; overflow: hidden;}
+.evt_list a .photo img{
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;}
+.evt_list a:hover .photo img, .evt_list a:focus .photo img{
+    -webkit-transform: scale(1.1) rotate(3deg);
+    -moz-transform: scale(1.1) rotate(3deg);
+    -o-transform: scale(1.1) rotate(3deg);
+    -ms-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);}
+/* 
+https://www.w3schools.com/css/css3_2dtransforms.asp
+transform : 변형 => scale, rotate, skew, translate, matrix
+** 2D : x, y 평면 변형 :  ie9+
+크기 : scale(단위없이 배수로 작성), scaleX(0.5), scaleY(2)
+회전 : rotate(각도를deg단위로) => rotate(45deg)
+기울이기 : skew(각도를deg단위로), skewX(10deg), skewY(130deg)
+이동하기 : translate(x, y), translateX(100px), translateY(50%)
+matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+** 3D : z 입체 변형
+
+transition 전환 : ie10+
+transition: 속성 경과시간(S) 가속감속효과 지연시간(S);
+transition-property
+transition-duration
+transition-timing-function: 기본 ease
+transition-delay: 기본 0초
+*/
+
+.evt_list a .txt{padding: 29px 7px;}
+.evt_list a .txt strong{display: block; font-size: 20px; color: #222; padding-bottom: 10px;}
+.evt_list a .txt p{line-height: 22px; height: 44px; font-size: 15px;}
+.evt_list a:hover .txt strong, .evt_list a:focus .txt strong{text-decoration: underline;}
